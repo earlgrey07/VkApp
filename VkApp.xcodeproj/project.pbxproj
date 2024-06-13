@@ -11,7 +11,7 @@
 		83586F382C1B1EB70040F136 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83586F372C1B1EB70040F136 /* SceneDelegate.swift */; };
 		83586F3A2C1B1EB70040F136 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83586F392C1B1EB70040F136 /* ViewController.swift */; };
 		83586F3D2C1B1EB70040F136 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 83586F3B2C1B1EB70040F136 /* Main.storyboard */; };
-		83586F3F2C1B1EC00040F136 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 83586F3E2C1B1EC00040F136 /* Assets.xcassets */; };
+		83586F3F2C1B1EC00040F136 /* AppIcon.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 83586F3E2C1B1EC00040F136 /* AppIcon.xcassets */; };
 		83586F422C1B1EC00040F136 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 83586F402C1B1EC00040F136 /* LaunchScreen.storyboard */; };
 /* End PBXBuildFile section */
 
@@ -21,7 +21,7 @@
 		83586F372C1B1EB70040F136 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		83586F392C1B1EB70040F136 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		83586F3C2C1B1EB70040F136 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		83586F3E2C1B1EC00040F136 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		83586F3E2C1B1EC00040F136 /* AppIcon.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = AppIcon.xcassets; sourceTree = "<group>"; };
 		83586F412C1B1EC00040F136 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		83586F432C1B1EC00040F136 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -56,15 +56,63 @@
 		83586F342C1B1EB70040F136 /* VkApp */ = {
 			isa = PBXGroup;
 			children = (
-				83586F352C1B1EB70040F136 /* AppDelegate.swift */,
-				83586F372C1B1EB70040F136 /* SceneDelegate.swift */,
-				83586F392C1B1EB70040F136 /* ViewController.swift */,
-				83586F3B2C1B1EB70040F136 /* Main.storyboard */,
-				83586F3E2C1B1EC00040F136 /* Assets.xcassets */,
-				83586F402C1B1EC00040F136 /* LaunchScreen.storyboard */,
-				83586F432C1B1EC00040F136 /* Info.plist */,
+				83586F4A2C1B1FC40040F136 /* Utilities */,
+				83586F492C1B1FB60040F136 /* Screens */,
 			);
 			path = VkApp;
+			sourceTree = "<group>";
+		};
+		83586F492C1B1FB60040F136 /* Screens */ = {
+			isa = PBXGroup;
+			children = (
+				83586F4C2C1B1FE20040F136 /* Main */,
+				83586F4B2C1B1FD90040F136 /* Launch */,
+			);
+			path = Screens;
+			sourceTree = "<group>";
+		};
+		83586F4A2C1B1FC40040F136 /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				83586F352C1B1EB70040F136 /* AppDelegate.swift */,
+				83586F372C1B1EB70040F136 /* SceneDelegate.swift */,
+				83586F4F2C1B21510040F136 /* Resources */,
+				83586F502C1B215C0040F136 /* Config */,
+			);
+			path = Utilities;
+			sourceTree = "<group>";
+		};
+		83586F4B2C1B1FD90040F136 /* Launch */ = {
+			isa = PBXGroup;
+			children = (
+				83586F402C1B1EC00040F136 /* LaunchScreen.storyboard */,
+			);
+			path = Launch;
+			sourceTree = "<group>";
+		};
+		83586F4C2C1B1FE20040F136 /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				83586F392C1B1EB70040F136 /* ViewController.swift */,
+				83586F3B2C1B1EB70040F136 /* Main.storyboard */,
+			);
+			path = Main;
+			sourceTree = "<group>";
+		};
+		83586F4F2C1B21510040F136 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				83586F3E2C1B1EC00040F136 /* AppIcon.xcassets */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		83586F502C1B215C0040F136 /* Config */ = {
+			isa = PBXGroup;
+			children = (
+				83586F432C1B1EC00040F136 /* Info.plist */,
+			);
+			path = Config;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -96,6 +144,7 @@
 				BuildIndependentTargetsInParallel = 1;
 				LastSwiftUpdateCheck = 1430;
 				LastUpgradeCheck = 1430;
+				ORGANIZATIONNAME = "earl-grey";
 				TargetAttributes = {
 					83586F312C1B1EB70040F136 = {
 						CreatedOnToolsVersion = 14.3.1;
@@ -126,7 +175,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				83586F422C1B1EC00040F136 /* LaunchScreen.storyboard in Resources */,
-				83586F3F2C1B1EC00040F136 /* Assets.xcassets in Resources */,
+				83586F3F2C1B1EC00040F136 /* AppIcon.xcassets in Resources */,
 				83586F3D2C1B1EB70040F136 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -289,7 +338,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = XJ2GHDKS2G;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = VkApp/Info.plist;
+				INFOPLIST_FILE = VkApp/Utilities/Config/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
@@ -317,7 +366,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = XJ2GHDKS2G;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = VkApp/Info.plist;
+				INFOPLIST_FILE = VkApp/Utilities/Config/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
