@@ -9,8 +9,7 @@
 /* Begin PBXBuildFile section */
 		83586F362C1B1EB70040F136 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83586F352C1B1EB70040F136 /* AppDelegate.swift */; };
 		83586F382C1B1EB70040F136 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83586F372C1B1EB70040F136 /* SceneDelegate.swift */; };
-		83586F3F2C1B1EC00040F136 /* AppIcon.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 83586F3E2C1B1EC00040F136 /* AppIcon.xcassets */; };
-		83586F422C1B1EC00040F136 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 83586F402C1B1EC00040F136 /* LaunchScreen.storyboard */; };
+		83586F3F2C1B1EC00040F136 /* app.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 83586F3E2C1B1EC00040F136 /* app.xcassets */; };
 		83B60BC62C2A8B5900B310C9 /* WelcomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83B60BC52C2A8B5900B310C9 /* WelcomeViewController.swift */; };
 /* End PBXBuildFile section */
 
@@ -18,8 +17,7 @@
 		83586F322C1B1EB70040F136 /* VkApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = VkApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		83586F352C1B1EB70040F136 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		83586F372C1B1EB70040F136 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		83586F3E2C1B1EC00040F136 /* AppIcon.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = AppIcon.xcassets; sourceTree = "<group>"; };
-		83586F412C1B1EC00040F136 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		83586F3E2C1B1EC00040F136 /* app.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = app.xcassets; sourceTree = "<group>"; };
 		83586F432C1B1EC00040F136 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		83B60BC52C2A8B5900B310C9 /* WelcomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -38,7 +36,7 @@
 		83586F292C1B1EB60040F136 = {
 			isa = PBXGroup;
 			children = (
-				83586F342C1B1EB70040F136 /* VkApp */,
+				83586F342C1B1EB70040F136 /* app */,
 				83586F332C1B1EB70040F136 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -51,57 +49,56 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
-		83586F342C1B1EB70040F136 /* VkApp */ = {
+		83586F342C1B1EB70040F136 /* app */ = {
 			isa = PBXGroup;
 			children = (
-				83586F4A2C1B1FC40040F136 /* Utilities */,
-				83586F492C1B1FB60040F136 /* Screens */,
+				83586F502C1B215C0040F136 /* config */,
+				83586F4F2C1B21510040F136 /* resources */,
+				838BFD9B2C3FA5EB00941063 /* sources */,
 			);
-			path = VkApp;
+			path = app;
 			sourceTree = "<group>";
 		};
 		83586F492C1B1FB60040F136 /* Screens */ = {
 			isa = PBXGroup;
 			children = (
 				83B60BC42C2A8B3D00B310C9 /* Welcome */,
-				83586F4B2C1B1FD90040F136 /* Launch */,
 			);
 			path = Screens;
 			sourceTree = "<group>";
 		};
-		83586F4A2C1B1FC40040F136 /* Utilities */ = {
+		83586F4F2C1B21510040F136 /* resources */ = {
 			isa = PBXGroup;
 			children = (
-				83586F352C1B1EB70040F136 /* AppDelegate.swift */,
-				83586F372C1B1EB70040F136 /* SceneDelegate.swift */,
-				83586F4F2C1B21510040F136 /* Resources */,
-				83586F502C1B215C0040F136 /* Config */,
+				83586F3E2C1B1EC00040F136 /* app.xcassets */,
 			);
-			path = Utilities;
+			path = resources;
 			sourceTree = "<group>";
 		};
-		83586F4B2C1B1FD90040F136 /* Launch */ = {
-			isa = PBXGroup;
-			children = (
-				83586F402C1B1EC00040F136 /* LaunchScreen.storyboard */,
-			);
-			path = Launch;
-			sourceTree = "<group>";
-		};
-		83586F4F2C1B21510040F136 /* Resources */ = {
-			isa = PBXGroup;
-			children = (
-				83586F3E2C1B1EC00040F136 /* AppIcon.xcassets */,
-			);
-			path = Resources;
-			sourceTree = "<group>";
-		};
-		83586F502C1B215C0040F136 /* Config */ = {
+		83586F502C1B215C0040F136 /* config */ = {
 			isa = PBXGroup;
 			children = (
 				83586F432C1B1EC00040F136 /* Info.plist */,
 			);
-			path = Config;
+			path = config;
+			sourceTree = "<group>";
+		};
+		838BFD9B2C3FA5EB00941063 /* sources */ = {
+			isa = PBXGroup;
+			children = (
+				83586F352C1B1EB70040F136 /* AppDelegate.swift */,
+				83586F372C1B1EB70040F136 /* SceneDelegate.swift */,
+				838BFD9C2C3FA63400941063 /* Main */,
+			);
+			path = sources;
+			sourceTree = "<group>";
+		};
+		838BFD9C2C3FA63400941063 /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				83586F492C1B1FB60040F136 /* Screens */,
+			);
+			path = Main;
 			sourceTree = "<group>";
 		};
 		83B60BC42C2A8B3D00B310C9 /* Welcome */ = {
@@ -171,8 +168,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				83586F422C1B1EC00040F136 /* LaunchScreen.storyboard in Resources */,
-				83586F3F2C1B1EC00040F136 /* AppIcon.xcassets in Resources */,
+				83586F3F2C1B1EC00040F136 /* app.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -190,17 +186,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
-
-/* Begin PBXVariantGroup section */
-		83586F402C1B1EC00040F136 /* LaunchScreen.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				83586F412C1B1EC00040F136 /* Base */,
-			);
-			name = LaunchScreen.storyboard;
-			sourceTree = "<group>";
-		};
-/* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
 		83586F442C1B1EC00040F136 /* Debug */ = {
@@ -325,7 +310,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = XJ2GHDKS2G;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = VkApp/Utilities/Config/Info.plist;
+				INFOPLIST_FILE = app/config/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
@@ -351,7 +336,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = XJ2GHDKS2G;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = VkApp/Utilities/Config/Info.plist;
+				INFOPLIST_FILE = app/config/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
