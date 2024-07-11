@@ -10,6 +10,7 @@
 		83586F362C1B1EB70040F136 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83586F352C1B1EB70040F136 /* AppDelegate.swift */; };
 		83586F382C1B1EB70040F136 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83586F372C1B1EB70040F136 /* SceneDelegate.swift */; };
 		83586F3F2C1B1EC00040F136 /* app.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 83586F3E2C1B1EC00040F136 /* app.xcassets */; };
+		838BFD9F2C3FA97F00941063 /* GradientView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 838BFD9E2C3FA97F00941063 /* GradientView.swift */; };
 		83B60BC62C2A8B5900B310C9 /* WelcomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83B60BC52C2A8B5900B310C9 /* WelcomeViewController.swift */; };
 /* End PBXBuildFile section */
 
@@ -19,6 +20,7 @@
 		83586F372C1B1EB70040F136 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		83586F3E2C1B1EC00040F136 /* app.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = app.xcassets; sourceTree = "<group>"; };
 		83586F432C1B1EC00040F136 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		838BFD9E2C3FA97F00941063 /* GradientView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GradientView.swift; sourceTree = "<group>"; };
 		83B60BC52C2A8B5900B310C9 /* WelcomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -96,9 +98,18 @@
 		838BFD9C2C3FA63400941063 /* Main */ = {
 			isa = PBXGroup;
 			children = (
+				838BFD9D2C3FA95000941063 /* Components */,
 				83586F492C1B1FB60040F136 /* Screens */,
 			);
 			path = Main;
+			sourceTree = "<group>";
+		};
+		838BFD9D2C3FA95000941063 /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				838BFD9E2C3FA97F00941063 /* GradientView.swift */,
+			);
+			path = Components;
 			sourceTree = "<group>";
 		};
 		83B60BC42C2A8B3D00B310C9 /* Welcome */ = {
@@ -181,6 +192,7 @@
 			files = (
 				83B60BC62C2A8B5900B310C9 /* WelcomeViewController.swift in Sources */,
 				83586F362C1B1EB70040F136 /* AppDelegate.swift in Sources */,
+				838BFD9F2C3FA97F00941063 /* GradientView.swift in Sources */,
 				83586F382C1B1EB70040F136 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
