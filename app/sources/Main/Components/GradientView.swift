@@ -53,7 +53,7 @@ class GradientView: UIView {
     }
     
     /// Gradient type
-    var gradientType: CAGradientLayerType = .axial {
+    var type: CAGradientLayerType = .axial {
         didSet {
             updateType()
         }
@@ -86,6 +86,6 @@ class GradientView: UIView {
     }
     
     private func updateType() {
-        gradientLayer.type = gradientType
+        gradientLayer.type = type
     }
 }
