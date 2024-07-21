@@ -17,5 +17,7 @@ struct Color {
         
         static var startColor: UIColor {"vk.gradient.start".uiColor}
         static var endColor: UIColor {"vk.gradient.end".uiColor}
+        static var buttonStartColor: UIColor {"vk.button.start".uiColor}
+        static var buttonEndColor: UIColor {"vk.button.end".uiColor}
     }
 }
