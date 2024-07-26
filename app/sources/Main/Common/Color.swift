@@ -15,9 +15,17 @@ struct Color {
     struct Gradient {
         private init() {}
         
-        static var startColor: UIColor {"vk.gradient.start".uiColor}
-        static var endColor: UIColor {"vk.gradient.end".uiColor}
-        static var buttonStartColor: UIColor {"vk.button.start".uiColor}
-        static var buttonEndColor: UIColor {"vk.button.end".uiColor}
+        static var start: UIColor { "vk.gradient.start".uiColor }
+        static var end: UIColor { "vk.gradient.end".uiColor }
+        static var buttonStart: UIColor { "vk.button.start".uiColor }
+        static var buttonEnd: UIColor { "vk.button.end".uiColor }
+    }
+    
+    // MARK: - Brand
+    struct Brand {
+        private init() {}
+        
+        static var text: UIColor { "vk.brand.text".uiColor }
+        static var termsText: UIColor { "vk.brand.terms".uiColor }
     }
 }

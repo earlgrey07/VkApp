@@ -17,6 +17,7 @@
 		83B8A6FA2C43D2FC00FCD275 /* String+Color.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83B8A6F92C43D2FC00FCD275 /* String+Color.swift */; };
 		83B8A6FC2C43D65900FCD275 /* images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 83B8A6FB2C43D65900FCD275 /* images.xcassets */; };
 		83B8A6FE2C43D71100FCD275 /* String+Image.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83B8A6FD2C43D71100FCD275 /* String+Image.swift */; };
+		83B8A7002C4D26F100FCD275 /* CustomButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83B8A6FF2C4D26F100FCD275 /* CustomButton.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,6 +33,7 @@
 		83B8A6F92C43D2FC00FCD275 /* String+Color.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Color.swift"; sourceTree = "<group>"; };
 		83B8A6FB2C43D65900FCD275 /* images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = images.xcassets; sourceTree = "<group>"; };
 		83B8A6FD2C43D71100FCD275 /* String+Image.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Image.swift"; sourceTree = "<group>"; };
+		83B8A6FF2C4D26F100FCD275 /* CustomButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomButton.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -122,6 +124,7 @@
 			isa = PBXGroup;
 			children = (
 				838BFD9E2C3FA97F00941063 /* GradientView.swift */,
+				83B8A6FF2C4D26F100FCD275 /* CustomButton.swift */,
 			);
 			path = Components;
 			sourceTree = "<group>";
@@ -227,6 +230,7 @@
 				83586F362C1B1EB70040F136 /* AppDelegate.swift in Sources */,
 				83B8A6FA2C43D2FC00FCD275 /* String+Color.swift in Sources */,
 				838BFD9F2C3FA97F00941063 /* GradientView.swift in Sources */,
+				83B8A7002C4D26F100FCD275 /* CustomButton.swift in Sources */,
 				83B8A6F72C43D1BD00FCD275 /* Color.swift in Sources */,
 				83586F382C1B1EB70040F136 /* SceneDelegate.swift in Sources */,
 				83B8A6FE2C43D71100FCD275 /* String+Image.swift in Sources */,

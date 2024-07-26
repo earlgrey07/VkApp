@@ -30,8 +30,12 @@ class WelcomeViewController: UIViewController {
         greetingLabelSettings()
     }()
     
-    private lazy var getStartedButton: UIButton = {
-        getStartedButtonSettings()
+    private lazy var startButton: CustomButton = {
+        startButtonSettings()
+    }()
+    
+    private lazy var termsButton: UIButton = {
+        termsButtonSettings()
     }()
     
     // MARK: - Lifecycle
@@ -42,7 +46,12 @@ class WelcomeViewController: UIViewController {
         setupStackView()
         setupWelcomeLabel()
         setupGreetingLabel()
-        setupGetStartedButton()
+        setupStartButton()
+    }
+    
+    // MARK: - Private
+    @objc private func startButtonTapped() {
+        print(#function)
     }
 }
 
@@ -52,8 +61,8 @@ extension WelcomeViewController {
     private func gradientViewSettings() -> GradientView {
         let view = GradientView()
         view.translatesAutoresizingMaskIntoConstraints = false
-        view.startColor = Color.Gradient.startColor
-        view.endColor = Color.Gradient.endColor
+        view.startColor = Color.Gradient.start
+        view.endColor = Color.Gradient.end
         return view
     }
     
@@ -83,7 +92,7 @@ extension WelcomeViewController {
     private func greetingLabelSettings() -> UILabel {
         let label = UILabel()
         label.translatesAutoresizingMaskIntoConstraints = false
-        label.text = "VK is the best social network on the planet"
+        label.text = "VK is the best social network\n on the planet"
         label.textColor = .white
         label.textAlignment = .center
         label.numberOfLines = 2
@@ -91,10 +100,15 @@ extension WelcomeViewController {
         return label
     }
     
-    private func getStartedButtonSettings() -> UIButton {
+    private func startButtonSettings() -> CustomButton {
+        let button = CustomButton(title: "GET STARTED")
+        button.addTarget(self, action: #selector(startButtonTapped), for: .touchUpInside)
+        return button
+    }
+    
+    private func termsButtonSettings() -> UIButton {
         let button = UIButton()
-        button.translatesAutoresizingMaskIntoConstraints = false
-        button.backgroundColor = .cyan
+        button.backgroundColor = .green
         return button
     }
     
@@ -153,14 +167,23 @@ extension WelcomeViewController {
         ])
     }
     
-    private func setupGetStartedButton() {
-        gradientView.addSubview(getStartedButton)
+    private func setupStartButton() {
+        gradientView.addSubview(startButton)
         
         NSLayoutConstraint.activate([
-            getStartedButton.centerXAnchor.constraint(equalTo: gradientView.centerXAnchor),
-            getStartedButton.widthAnchor.constraint(equalToConstant: 286),
-            getStartedButton.heightAnchor.constraint(equalToConstant: 56),
-            getStartedButton.bottomAnchor.constraint(equalTo: gradientView.bottomAnchor, constant: -64)
+            startButton.centerXAnchor.constraint(equalTo: gradientView.centerXAnchor),
+            startButton.widthAnchor.constraint(equalToConstant: 286),
+            startButton.heightAnchor.constraint(equalToConstant: 56),
+            startButton.bottomAnchor.constraint(equalTo: gradientView.bottomAnchor, constant: -64)
+        ])
+    }
+    
+    private func termsButtonSetup() {
+        gradientView.addSubview(termsButton)
+        
+        NSLayoutConstraint.activate([
+            termsButton.centerXAnchor.constraint(equalTo: gradientView.centerXAnchor),
+            termsButton.bottomAnchor.constraint(equalTo: gradientView.bottomAnchor, constant: -28)
         ])
     }
 }
