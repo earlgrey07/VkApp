@@ -47,11 +47,16 @@ class WelcomeViewController: UIViewController {
         setupWelcomeLabel()
         setupGreetingLabel()
         setupStartButton()
+        setupTermsButton()
     }
     
     // MARK: - Private
     @objc private func startButtonTapped() {
         print(#function)
+    }
+    
+    @objc private func termsButtonTapped() {
+        print("https://vk.com/terms")
     }
 }
 
@@ -108,7 +113,11 @@ extension WelcomeViewController {
     
     private func termsButtonSettings() -> UIButton {
         let button = UIButton()
-        button.backgroundColor = .green
+        button.translatesAutoresizingMaskIntoConstraints = false
+        button.setTitle("Terms of using the Vk", for: .normal)
+        button.setTitleColor(Color.Brand.termsText, for: .normal)
+        button.titleLabel?.font = .systemFont(ofSize: 14)
+        button.addTarget(self, action: #selector(termsButtonTapped), for: .touchUpInside)
         return button
     }
     
@@ -178,7 +187,7 @@ extension WelcomeViewController {
         ])
     }
     
-    private func termsButtonSetup() {
+    private func setupTermsButton() {
         gradientView.addSubview(termsButton)
         
         NSLayoutConstraint.activate([
